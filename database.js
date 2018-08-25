@@ -1,4 +1,4 @@
-
+const tables = require("./tables.js")
 const reservations = [];
 const waitlist = [];
 
@@ -8,5 +8,8 @@ module.exports = {
     },
     waitlist: () => {
         return waitlist
+    },
+    tables: () => {
+        return tables
     }
 };
