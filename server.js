@@ -26,7 +26,7 @@ app.get("/tables"), (req, res) => {
 };
 
 app.get("/reservation"), (req, res) => {
-    res.sendFile(path.join(__dirname, "reservation.html"));
+    res.sendFile(path.join(__dirname, "HotRestaurantReservations.html"));
     console.log("reservation page")
 };
 
