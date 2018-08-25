@@ -30,8 +30,10 @@ app.get("/reservation"), (req, res) => {
 
 app.get("/api/tables"), (req, res) => {
     console.log("api route for tables")
+    // return res.json(tables);
 };
 
 app.get("/api/waitlists"), (req, res) => {
     console.log("api route for waitlists")
+    // return res.json(waitlists);
 };
