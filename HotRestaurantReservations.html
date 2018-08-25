@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Reservation Page</title>
@@ -7,23 +8,33 @@
   <!-- Latest compiled and minified CSS & JS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 </head>
+
 <body>
 
   <div class="container">
 
     <div class="jumbotron text-center" style="background-color: maroon; color: bisque">
-      <h1 class="text-center"><span class="fa fa-fire"></span> Hot Tossers Pizzatorium and Pints</h1>
+      <h1 class="text-center">
+        <span class="fa fa-fire"></span> Hot Tossers Pizzatorium and Pints</h1>
       <hr>
       <h2 class="text-center">Make your reservation ya filthy animal!</h2>
       <br>
 
       <div class="text-center">
-        <a href="/tables"><button class="btn btn-lg btn-primary"><span class="pizzaTables"></span> View Tables</button></a>
-        <a href="/"><button class="btn btn-lg btn-default">Home<span class="pizzaHome"></span></button></a>
+        <a href="/tables">
+          <button class="btn btn-lg btn-primary">
+            <span class="pizzaTables"></span> View Tables</button>
+        </a>
+        <a href="/">
+          <button class="btn btn-lg btn-default">Home
+            <span class="pizzaHome"></span>
+          </button>
+        </a>
       </div>
     </div>
 
@@ -71,11 +82,45 @@
 
     <footer class="footer">
       <div class="container">
-        <p><a href="/api/tables">API Table Link</a> | <a href="/api/waitlist">API Wait List</a>
+        <p>
+          <a href="/api/tables">API Table Link</a> |
+          <a href="/api/waitlist">API Wait List</a>
       </div>
     </footer>
 
   </div>
-<script src = "tables.js" type = "text/javascript"></script>
+  <!-- <script src="tables.js" type="text/javascript"></script> -->
+  <script type="text/javascript">
+   let tables = [];
+    console.log("its linked");
+
+    function Table(u_ID, name, phone_num, email) {
+        this.u_ID = u_ID;
+        this.name = name;
+        this.phone_num = phone_num;
+        this.email = email;
+    };
+
+    document.getElementById("#add-btn").addEventListener("click", function (event) {
+        event.preventDefault();
+        let newTable = new Table(
+            document.getElementById("#uniqueid"),
+            document.getElementById("#name"),
+            document.getElementById("#phonenumber"),
+            document.getElementById("#email")
+        );
+        tables.push(newTable);
+        document.getElementById("#uniqueid").innerHTML("");
+        document.getElementById("#name").innerHTML("");
+        document.getElementById("#phonenumber").innerHTML("");
+        document.getElementById("#email").innerHTML("");
+    });
+    // module.exports = {
+    //     tables: () => {
+    //         return tables;
+    //     }
+    // };</script>
+  
 </body>
+
 </html>
