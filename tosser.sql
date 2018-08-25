@@ -5,6 +5,6 @@ USE tosser_DB;
 CREATE TABLE reservations (
     u_ID INT(11) NOT NULL PRIMARY KEY,
     name VARCHAR(30), 
-    phone_num INT(30),
+    phone_num VARCHAR(30),
     email VARCHAR(100)
 );
