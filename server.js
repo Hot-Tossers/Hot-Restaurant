@@ -4,7 +4,8 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const path = require("path");
 
-const database = require("./database.js")
+const database = require("./database.js");
+const tables = require("./tables.js")
 
 // Sets up the Express App
 // =============================================================

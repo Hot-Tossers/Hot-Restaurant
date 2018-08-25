@@ -1,42 +1,55 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Train Activity</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  
 
-    
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Train Activity</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+
 
 </head>
+
 <body>
   <div class="container">
 
     <div class="jumbotron text-center" style="background-color: maroon; color: bisque">
       <img src="https://i.pinimg.com/236x/64/bf/46/64bf46a0d2d3bbbfff2a1da111ea9637--buy-posters-pizza-dough.jpg" alt="Ultimate Tosser">
-      <h1 class="text-center"><span class="fa fa-fire"></span>Hot Tossers Pizzatorium and Pints</h1>
+      <h1 class="text-center">
+        <span class="fa fa-fire"></span>Hot Tossers Pizzatorium and Pints</h1>
       <hr>
       <h3 class="text-center">There are only 5 tables available so make a reservation you filthy animal!</h3>
       <hr>
       <div class="text-center">
-        <a href="/tables"><button class="btn btn-lg btn-primary"><span class="pizzaTables"></span> View Tables</button></a>
-        <a href="/reserve"><button class="btn btn-lg btn-danger"><span class="pizzaReserve"></span> Make Reservation</button></a>
+        <a href="/tables">
+          <button class="btn btn-lg btn-primary">
+            <span class="pizzaTables"></span> View Tables</button>
+        </a>
+        <a href="/reserve">
+          <button class="btn btn-lg btn-danger">
+            <span class="pizzaReserve"></span> Make Reservation</button>
+        </a>
       </div>
-    
+
     </div>
 
     <footer class="footer">
-        <div class="container">
-          <p><a href="/api/tables">API Table Link</a> | <a href="/api/waitlist">API Wait List</a>
-        </div>
-      </footer>
-  
-    </div>
-    
+      <div class="container">
+        <p>
+          <a href="/api/tables">API Table Link</a> |
+          <a href="/api/waitlist">API Wait List</a>
+      </div>
+    </footer>
+
+  </div>
+
 
 </body>
+
 </html>

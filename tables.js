@@ -1,4 +1,4 @@
-$(document).ready(function () {
+
 
     // let express = require("express");
     // let bodyParser = require("body-parser");
@@ -16,29 +16,22 @@ $(document).ready(function () {
         this.email = email;
     };
 
-    $("#add-btn").on("click", function (event) {
+    document.getElementById("#add-btn").addEventListener("click", function (event) {
         event.preventDefault();
         let newTable = new Table(
-            $("#uniqueid").val().trim(),
-            $("#name").val().trim(),
-            $("#phonenumber").val().trim(),
-            $("#email").val().trim()
+            document.getElementById("#uniqueid"),
+            document.getElementById("#name"),
+            document.getElementById("#phonenumber"),
+            document.getElementById("#email")
         );
         tables.push(newTable);
-        console.log(tables);
-        $("#uniqueid").val("");
-        $("#name").val("");
-        $("#phonenumber").val("");
-        $("#email").val("");
+        document.getElementById("#uniqueid").innerHTML("");
+        document.getElementById("#name").innerHTML("");
+        document.getElementById("#phonenumber").innerHTML("");
+        document.getElementById("#email").innerHTML("");
     });
-    export {tables};
-
-    // if (tables.length > 4) {
-    //     tables.push(waitlist);
-
-    // $.post("/api/tables", newTable)
-    // .then(function(data){
-    //     console.log("reservations.html")
-    // });
-
-});
+    module.exports = {
+        tables: () => {
+            return tables;
+        }
+    };

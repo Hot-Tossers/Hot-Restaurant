@@ -6,7 +6,8 @@
   <title>Tables Page</title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 </head>
@@ -16,14 +17,22 @@
   <div class="container">
 
     <div class="jumbotron text-center" style="background-color: maroon; color: bisque">
-      <h1 class="text-center"><span class="fa fa-fire"></span> Hot Tossers Pizzatorium and Pints</h1>
+      <h1 class="text-center">
+        <span class="fa fa-fire"></span> Hot Tossers Pizzatorium and Pints</h1>
       <hr>
       <h2 class="text-center">Current Reservations and Waiting List</h2>
       <br>
 
       <div class="text-center">
-        <a href="/reserve"><button class="btn btn-lg btn-danger"><span class="pizzaReserve"></span> Make Reservation</button></a>
-        <a href="/"><button class="btn btn-lg btn-default"><span class="fa fa-home"></span></button></a>
+        <a href="/reserve">
+          <button class="btn btn-lg btn-danger">
+            <span class="pizzaReserve"></span> Make Reservation</button>
+        </a>
+        <a href="/">
+          <button class="btn btn-lg btn-default">
+            <span class="fa fa-home"></span>
+          </button>
+        </a>
       </div>
     </div>
 
@@ -41,7 +50,7 @@
         </div>
 
         <!-- Waiting List Card -->
-        <div class="card mt-4" >
+        <div class="card mt-4">
           <div class="card-header" style="background-color: maroon; color: bisque">
             <h4>Waiting List</h4>
           </div>
@@ -56,14 +65,15 @@
     <footer class="footer mt-4">
       <div class="container">
         <p>Control Panel</p>
-        <p><a href="#" id="clear">Clear Table</a> | <a href="/api/tables">API Table Link</a> | <a href="/api/waitlist">API
-            Wait List</a>
+        <p>
+          <a href="#" id="clear">Clear Table</a> |
+          <a href="/api/tables">API Table Link</a> |
+          <a href="/api/waitlist">API Wait List</a>
       </div>
     </footer>
 
   </div>
 
 </body>
-</html>
 
-  
+</html>
