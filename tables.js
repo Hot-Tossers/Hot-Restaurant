@@ -31,7 +31,7 @@ $(document).ready(function () {
         $("#phonenumber").val("");
         $("#email").val("");
     });
-
+    export {tables};
 
     // if (tables.length > 4) {
     //     tables.push(waitlist);
