@@ -35,3 +35,7 @@ app.get("/api/tables"), (req, res) => {
 app.get("/api/waitlists"), (req, res) => {
     console.log("api route for waitlists")
 };
+
+app.listen(PORT, function() {
+    console.log("App listening on PORT " + PORT);
+  });
